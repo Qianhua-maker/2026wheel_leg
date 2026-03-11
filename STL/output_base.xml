@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mujoco model="wheel_leg_robot">
+  <!-- 编译器设置 -->
+  <compiler meshdir="assets" autolimits="true" inertiafromgeom="true"/>
+  
+  <!-- 资源定义：STL模型文件 -->
+  <asset>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_mo_ni_tian_xian__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_mo_ni_tian_xian__2.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_fu_zai__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_fu_zai__2.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_che_shen__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang__2.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang__3.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang__4.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang_gu_ding__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang_gu_ding__2.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang_gu_ding__3.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang_gu_ding__4.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang_gu_ding__5.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang_gu_ding__6.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang_gu_ding__7.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji__2.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji__3.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji__4.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji__5.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji_gu_ding__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji_gu_ding__2.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji_gu_ding__3.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji_gu_ding__4.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji_gu_ding__5.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji_gu_ding__6.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji_gu_ding__7.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji_gu_ding__8.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____left_behind_calf_1__lun_tui_da_tui__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____left_behind_thigh_3__lun_tui_xiao_tui__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____left_front_calf_1__lun_tui_da_tui__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____left_front_thigh_1__lun_tui_xiao_tui__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____left_wheel_2__lun_tui_che_lun__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____left_wheel_2__lun_tui_qu_dong_lun__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____right_behind_calf_1__lun_tui_da_tui__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____right_behind_thigh_1__lun_tui_xiao_tui__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____right_front_calf_1__lun_tui_da_tui__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____right_front_thigh_1__lun_tui_xiao_tui__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____right_wheel_3__lun_tui_che_lun__1.stl"/>
+    <mesh file="2026_fei_ka_lun_tui____right_wheel_3__lun_tui_qu_dong_lun__1.stl"/>
+    
+    <!-- 地面纹理（可选） -->
+    <texture type="2d" name="ground" builtin="checker" rgb1=".1 .2 .3" rgb2=".2 .3 .4" width="500" height="500"/>
+    <material name="ground_mat" texture="ground" texrepeat="10 10" texuniform="true" reflectance="0.2"/>
+  </asset>
+
+  <!-- 默认属性配置 -->
+  <default>
+    <default class="base_default">
+      <geom contype="1" conaffinity="1" condim="3" friction="1 0.1 0.1" rgba="0.8 0.8 0.8 1"/>
+    </default>
+    <default class="thigh_default">
+      <geom contype="1" conaffinity="0" condim="3" friction="1 0.1 0.1" rgba="0.7 0.7 0.7 1"/>
+    </default>
+    <default class="calf_default">
+      <geom contype="0" conaffinity="0" condim="3" friction="1 0.1 0.1" rgba="0.6 0.6 0.6 1"/>
+    </default>
+    <default class="wheel_default">
+      <geom contype="1" conaffinity="1" condim="3" friction="0.5 0.5 0.5" rgba="0.5 0.5 0.5 1"/>
+    </default>
+    <default class="joint_default">
+      <joint damping="0.1" stiffness="0.0" armature="0.01" limited="false"/>
+    </default>
+  </default>
+
+<worldbody>
+  <!-- 地面 -->
+  <geom name="ground" type="plane" size="0 0 0.01" pos="0 0 0" material="ground_mat"
+        contype="1" conaffinity="1" condim="3" friction="0.5 0.5 0.01" rgba="0.5 0.5 0.5 1"/>
+  <!-- 光照 -->
+  <light name="light" pos="0 0 5" dir="0 0 -1" diffuse="1 1 1" specular="0.1 0.1 0.1"/>
+
+  <!-- 基座 -->
+  <body name="base_body" pos="0 0 0.265">
+    <!-- 基座几何体 -->
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_mo_ni_tian_xian__1" mass="0.0576" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_mo_ni_tian_xian__2" mass="0.0576" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_fu_zai__1" mass="0.1803" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_fu_zai__2" mass="0.1803" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_che_shen__1" mass="0.0350" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang__1" mass="0.1535" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang__2" mass="0.1535" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang__3" mass="0.1535" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang__4" mass="0.1535" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang_gu_ding__1" mass="0.1535" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang_gu_ding__2" mass="0.1535" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang_gu_ding__3" mass="0.1535" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang_gu_ding__4" mass="0.1535" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang_gu_ding__5" mass="0.1535" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang_gu_ding__6" mass="0.1535" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_jian_su_xiang_gu_ding__7" mass="0.1535" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji__1" mass="0.0893" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji__2" mass="0.0893" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji__3" mass="0.0893" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji__4" mass="0.0893" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji__5" mass="0.0893" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji_gu_ding__1" mass="0.0893" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji_gu_ding__2" mass="0.0893" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji_gu_ding__3" mass="0.0893" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji_gu_ding__4" mass="0.0893" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji_gu_ding__5" mass="0.0893" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji_gu_ding__6" mass="0.0893" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji_gu_ding__7" mass="0.0893" class="base_default"/>
+    <geom type="mesh" mesh="2026_fei_ka_lun_tui____base_1__lun_tui_kuan_guan_jie_dian_ji_gu_ding__8" mass="0.0893" class="base_default"/>
+
+    <!-- 自由关节 - 允许基座自由移动和旋转（6个自由度：3个平移 + 3个旋转） -->
+    <joint type="free" name="root_joint"/>
+
+    <!-- 髋关节site -->
+    <site name="left_behind_hip_site" pos="-0.075 -0.068 -0.104" size="0.001 0.001 0.001" rgba="1 0 0 1"/>
+    <site name="left_front_hip_site" pos="-0.075 0.068 -0.104" size="0.001 0.001 0.001" rgba="1 0 0 1"/>
+    <site name="right_behind_hip_site" pos="0.075 -0.068 -0.104" size="0.001 0.001 0.001" rgba="0 1 0 1"/>
+    <site name="right_front_hip_site" pos="0.075 0.068 -0.104" size="0.001 0.001 0.001" rgba="0 1 0 1"/>
+
+    <!-- 左后腿 -->
+    <body name="left_behind_thigh_body" pos="0 0 0">
+      <joint name="left_behind_hip_joint" type="hinge" pos="-0.075 -0.068 -0.104" axis="1 0 0"  class="joint_default"/>
+      <geom type="mesh" mesh="2026_fei_ka_lun_tui____left_behind_thigh_3__lun_tui_xiao_tui__1" mass="0.0091" class="thigh_default"/>
+      <body name="left_behind_calf_body" pos="0 0 0">
+        <joint name="left_behind_knee_joint" type="hinge" pos="-0.080 -0.06543 -0.164" axis="1 0 0"  class="joint_default"/>
+        <geom type="mesh" mesh="2026_fei_ka_lun_tui____left_behind_calf_1__lun_tui_da_tui__1" mass="0.0124" class="calf_default"/>
+      </body>
+    </body>
+
+    <!-- 左前腿 -->
+    <body name="left_front_thigh_body" pos="0 0 0">
+      <!-- <joint name="left_front_hip_joint" type="hinge" pos="-0.075 0.068 -0.104" axis="1 0 0"  class="joint_default"/> -->
+      <geom type="mesh" mesh="2026_fei_ka_lun_tui____left_front_thigh_1__lun_tui_xiao_tui__1" mass="0.0091" class="thigh_default"/>
+      <body name="left_front_calf_body" pos="0 0 0">
+        <!-- <joint name="left_front_knee_joint" type="hinge" pos="-0.080 0.07056 -0.164" axis="1 0 0"  class="joint_default"/> -->
+        <geom type="mesh" mesh="2026_fei_ka_lun_tui____left_front_calf_1__lun_tui_da_tui__1" mass="0.0124" class="calf_default"/>
+        <body name="left_wheel_body" pos="0 0 0">
+          <joint name="left_wheel_joint" type="hinge" pos="0.0935 0.0026 -0.223" axis="1 0 0" limited="false" class="joint_default"/>
+          <geom type="mesh" mesh="2026_fei_ka_lun_tui____left_wheel_2__lun_tui_che_lun__1" mass="0.0472" class="wheel_default"/>
+          <geom type="mesh" mesh="2026_fei_ka_lun_tui____left_wheel_2__lun_tui_qu_dong_lun__1" mass="0.0681" class="wheel_default"/>
+        </body>
+      </body>
+    </body>
+
+    <!-- 右后腿 -->
+    <body name="right_behind_thigh_body" pos="0 0 0">
+      <!-- <joint name="right_behind_hip_joint" type="hinge" pos="0.075 -0.068 -0.104" axis="1 0 0"  class="joint_default"/> -->
+      <geom type="mesh" mesh="2026_fei_ka_lun_tui____right_behind_thigh_1__lun_tui_xiao_tui__1" mass="0.0091" class="thigh_default"/>
+      <body name="right_behind_calf_body" pos="0 0 0">
+        <!-- <joint name="right_behind_knee_joint" type="hinge" pos="0.080 -0.06543 -0.164" axis="1 0 0"  class="joint_default"/> -->
+        <geom type="mesh" mesh="2026_fei_ka_lun_tui____right_behind_calf_1__lun_tui_da_tui__1" mass="0.0124" class="calf_default"/>
+      </body>
+    </body>
+
+    <!-- 右前腿 -->
+    <body name="right_front_thigh_body" pos="0 0 0">
+      <!-- <joint name="right_front_hip_joint" type="hinge" pos="0.075 0.068 -0.104" axis="1 0 0"  class="joint_default"/> -->
+      <geom type="mesh" mesh="2026_fei_ka_lun_tui____right_front_thigh_1__lun_tui_xiao_tui__1" mass="0.0091" class="thigh_default"/>
+      <body name="right_front_calf_body" pos="0 0 0">
+        <!-- <joint name="right_front_knee_joint" type="hinge" pos="0.080 0.07056 -0.164" axis="1 0 0"  class="joint_default"/> -->
+        <geom type="mesh" mesh="2026_fei_ka_lun_tui____right_front_calf_1__lun_tui_da_tui__1" mass="0.0124" class="calf_default"/>
+        <body name="right_wheel_body" pos="0 0 0">
+            <joint name="right_wheel_joint" type="hinge" pos="-0.0935 0.0026 -0.223" axis="1 0 0" limited="false" class="joint_default"/>
+            <geom type="mesh" mesh="2026_fei_ka_lun_tui____right_wheel_3__lun_tui_che_lun__1" mass="0.0472" class="wheel_default"/>
+            <geom type="mesh" mesh="2026_fei_ka_lun_tui____right_wheel_3__lun_tui_qu_dong_lun__1" mass="0.0681" class="wheel_default"/>
+        </body>
+      </body>
+    </body>
+  </body>
+
+  <!-- 闭链约束（equality）部分需在<equality>标签中补充 -->
+</worldbody>
+
+<equality>
+  <connect body1="left_wheel_body" body2="left_front_calf_body" anchor="0.0935 0.0026 -0.223" />
+  <connect body1="right_wheel_body" body2="right_front_calf_body" anchor="-0.0935 0.0026 -0.223" />
+  <connect body1="left_wheel_body" body2="left_behind_calf_body" anchor="0.0935 0.0026 -0.223" />
+  <connect body1="right_wheel_body" body2="right_behind_calf_body" anchor="-0.0935 0.0026 -0.223" />
+</equality>
+
+  <!-- 执行器（关节控制） -->
+  <actuator>
+    <!-- 轮子驱动电机 -->
+    <motor name="left_wheel_motor" joint="left_wheel_joint" ctrlrange="-5.0 5.0" gear="1" ctrllimited="true"/>
+    <motor name="right_wheel_motor" joint="right_wheel_joint" ctrlrange="-5.0 5.0" gear="1" ctrllimited="true"/>
+    
+    <!-- 左后髋关节电机 -->
+    <!-- <motor name="left_behind_hip_motor" joint="left_behind_hip_joint" ctrlrange="-2.0 2.0" gear="10.0" ctrllimited="true"/> -->
+     
+    <!-- 左前髋关节电机 -->
+    <!-- <motor name="left_front_hip_motor" joint="left_front_hip_joint" ctrlrange="-2.0 2.0" gear="10.0" ctrllimited="true"/> -->
+    
+    <!-- 右后髋关节电机 -->
+    <!-- <motor name="right_behind_hip_motor" joint="right_behind_hip_joint" ctrlrange="-2.0 2.0" gear="10.0" ctrllimited="true"/> -->
+    
+    <!-- 右前髋关节电机 -->
+    <!-- <motor name="right_front_hip_motor" joint="right_front_hip_joint" ctrlrange="-2.0 2.0" gear="10.0" ctrllimited="true"/> -->
+    
+  </actuator>
+
+  <!-- 仿真配置 -->
+  <option timestep="0.002" integrator="RK4" gravity="0 0 -9.81" />
+  
+  <!-- 传感器配置 -->
+  <sensor>
+    <!-- 基座位姿传感器 -->
+    <framepos name="base_pos" objtype="body" objname="base_body"/>
+    <framequat name="base_quat" objtype="body" objname="base_body"/>
+    
+    <!-- 左后腿关节角度传感器 -->
+    <!-- <jointpos name="left_behind_hip_pos" joint="left_behind_hip_joint"/> -->
+    <!-- <jointpos name="left_behind_knee_pos" joint="left_behind_knee_joint"/> -->
+    
+    <!-- 左前腿关节角度传感器 -->
+    <!-- <jointpos name="left_front_hip_pos" joint="left_front_hip_joint"/> -->
+    <!-- <jointpos name="left_front_knee_pos" joint="left_front_knee_joint"/> -->
+    
+    <!-- 右后腿关节角度传感器 -->
+    <!-- <jointpos name="right_behind_hip_pos" joint="right_behind_hip_joint"/> -->
+    <!-- <jointpos name="right_behind_knee_pos" joint="right_behind_knee_joint"/> -->
+    
+    <!-- 右前腿关节角度传感器 -->
+    <!-- <jointpos name="right_front_hip_pos" joint="right_front_hip_joint"/> -->
+    <!-- <jointpos name="right_front_knee_pos" joint="right_front_knee_joint"/> -->
+    
+    <!-- 轮子关节角度传感器 -->
+    <jointpos name="left_wheel_pos" joint="left_wheel_joint"/>
+    <jointpos name="right_wheel_pos" joint="right_wheel_joint"/>
+
+    
+    <!-- 关节速度传感器 -->
+    <jointvel name="left_wheel_vel" joint="left_wheel_joint"/>
+    <jointvel name="right_wheel_vel" joint="right_wheel_joint"/>
+    
+  </sensor>
+
+  <!-- 视觉渲染配置（可选） -->
+  <visual>
+    <global azimuth="45" elevation="-30"/>
+  </visual>
+</mujoco>
