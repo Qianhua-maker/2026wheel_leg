@@ -967,8 +967,8 @@ def main():
         print(A)
         print(B)
 
-    Q_small = np.diag([0, 8, 80, 20])
-    R_small = np.array([[0.3]])
+    Q_small = np.diag([0, 1, 1, 1])
+    R_small = np.array([[0.4]])
     K_small = compute_lqr_gain(A, B, Q_small, R_small, verbose=VERBOSE)
     if VERBOSE:
         print("K_small (4x1):\n", K_small)
@@ -1003,7 +1003,7 @@ def main():
 
                 x_current = get_state(data)
                 x_error = x_current - X_REF
-                
+
                 if step_count % reset_interval == 0:
                     for j in WHEEL_JOINTS:
                         joint_id = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_JOINT, j)
